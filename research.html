@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Research publications and academic work by Pierre-Amaury Grumiaux - Deep learning for audio, speaker localization, and spatial audio processing.">
+  <meta name="author" content="Pierre-Amaury Grumiaux">
+  
+  <title>Research — Pierre-Amaury Grumiaux</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="./static/css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="./index.html" class="nav__logo">P.A. Grumiaux</a>
+        
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+        
+        <ul class="nav__links" id="nav-links">
+          <li><a href="./index.html" class="nav__link">Home</a></li>
+          <li><a href="./research.html" class="nav__link nav__link--active">Research</a></li>
+          <li><a href="./music.html" class="nav__link">Music</a></li>
+          <li><a href="./about.html" class="nav__link">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Research</h1>
+      <p class="page-header__description">
+        My academic work focuses on deep learning for audio signal processing, 
+        with particular expertise in spatial audio analysis and speaker localization.
+      </p>
+    </div>
+  </header>
+
+  <!-- Research Overview -->
+  <section class="section">
+    <div class="container container--narrow">
+      <h2>Research Interests</h2>
+      <p>
+        My research sits at the intersection of <strong>deep learning</strong> and <strong>audio signal processing</strong>. 
+        During my PhD, I developed neural network architectures for analyzing spatial audio signals, 
+        specifically for counting and localizing speakers in reverberant environments using Ambisonics recordings.
+      </p>
+      <p>
+        Beyond localization, I'm deeply interested in <strong>music information retrieval</strong>, 
+        <strong>audio synthesis</strong>, and <strong>generative models for audio</strong>. My postdoctoral 
+        research explored bandwidth extension of musical signals using differentiable signal processing techniques.
+      </p>
+      <p>
+        I believe the future of audio AI lies in models that understand sound the way musicians do — 
+        not just as spectrograms, but as meaningful acoustic events with temporal structure and context.
+      </p>
+    </div>
+  </section>
+
+  <!-- Publications -->
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left;">
+        <p class="section__subtitle">Academic Output</p>
+        <h2 class="section__title">Publications</h2>
+      </div>
+
+      <!-- PhD Thesis -->
+      <div class="publication">
+        <p class="publication__year">2021 — PhD Thesis</p>
+        <h3 class="publication__title">Deep Learning for Speaker Counting and Localization with Ambisonics Signals</h3>
+        <p class="publication__authors">Pierre-Amaury Grumiaux</p>
+        <p class="publication__venue">Université Grenoble Alpes, supervised by Laurent Girin, Srđan Kitić, and Alexandre Guérin</p>
+        <div class="publication__links">
+          <a href="./static/pdf/phd_thesis.pdf" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            PDF
+          </a>
+          <a href="http://www.theses.fr/s209940" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            theses.fr
+          </a>
+        </div>
+      </div>
+
+      <!-- 2020 Publications -->
+      <div class="publication">
+        <p class="publication__year">2020</p>
+        <h3 class="publication__title">A Survey of Sound Source Localization with Deep Learning Methods</h3>
+        <p class="publication__authors">P.-A. Grumiaux, S. Kitić, L. Girin, A. Guérin</p>
+        <p class="publication__venue">The Journal of the Acoustical Society of America (JASA), 2022</p>
+        <div class="publication__links">
+          <a href="https://arxiv.org/abs/2109.03465" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            arXiv
+          </a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="publication__year">2020</p>
+        <h3 class="publication__title">Improved Feature Extraction for CRNN-based Multiple Sound Source Localization</h3>
+        <p class="publication__authors">P.-A. Grumiaux, S. Kitić, L. Girin, A. Guérin</p>
+        <p class="publication__venue">European Signal Processing Conference (EUSIPCO), Amsterdam, Netherlands</p>
+        <div class="publication__links">
+          <a href="./static/pdf/eusipco2020.pdf" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            PDF
+          </a>
+          <a href="https://arxiv.org/abs/2003.07839" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            arXiv
+          </a>
+        </div>
+      </div>
+
+      <div class="publication">
+        <p class="publication__year">2020</p>
+        <h3 class="publication__title">Multichannel CRNN for Speaker Counting: an Analysis of Performance</h3>
+        <p class="publication__authors">P.-A. Grumiaux, S. Kitić, L. Girin, A. Guérin</p>
+        <p class="publication__venue">Forum Acusticum (FA2020), Lyon, France</p>
+        <div class="publication__links">
+          <a href="./static/pdf/fa2020.pdf" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            PDF
+          </a>
+        </div>
+      </div>
+
+      <!-- 2017 Publication -->
+      <div class="publication">
+        <p class="publication__year">2017</p>
+        <h3 class="publication__title">Impulse-Response and CAD-Model-Based Physical Modeling in Faust</h3>
+        <p class="publication__authors">P.-A. Grumiaux, R. Michon, E. J. G. Arias, P. Jouvelot</p>
+        <p class="publication__venue">Linux Audio Conference (LAC17), Saint-Étienne, France</p>
+        <div class="publication__links">
+          <a href="./static/pdf/lac2017.pdf" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+            </svg>
+            PDF
+          </a>
+          <a href="https://hal-mines-paristech.archives-ouvertes.fr/hal-01710232" class="publication__link">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+            HAL
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills -->
+  <section class="section">
+    <div class="container container--narrow">
+      <div class="section__header" style="text-align: left;">
+        <p class="section__subtitle">Technical Stack</p>
+        <h2 class="section__title">Skills & Tools</h2>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4 class="skill-category__title">Deep Learning</h4>
+          <div class="skill-category__list">
+            <span class="skill-tag">PyTorch</span>
+            <span class="skill-tag">PyTorch Lightning</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">CNNs / CRNNs</span>
+            <span class="skill-tag">Attention Mechanisms</span>
+            <span class="skill-tag">Transformers</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4 class="skill-category__title">Audio Processing</h4>
+          <div class="skill-category__list">
+            <span class="skill-tag">Mel-Spectrograms</span>
+            <span class="skill-tag">Spatial Audio</span>
+            <span class="skill-tag">Ambisonics</span>
+            <span class="skill-tag">librosa</span>
+            <span class="skill-tag">torchaudio</span>
+            <span class="skill-tag">SoX</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4 class="skill-category__title">Programming</h4>
+          <div class="skill-category__list">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">NumPy / SciPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Linux</span>
+            <span class="skill-tag">Docker</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h4 class="skill-category__title">ML Engineering</h4>
+          <div class="skill-category__list">
+            <span class="skill-tag">Model Optimization</span>
+            <span class="skill-tag">Embedded Deployment</span>
+            <span class="skill-tag">ONNX</span>
+            <span class="skill-tag">Dataset Curation</span>
+            <span class="skill-tag">Experiment Tracking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div>
+          <h3 class="footer__brand">P.A. Grumiaux</h3>
+          <p class="footer__description">
+            Deep Learning Engineer specializing in audio AI. 
+            Building intelligent systems that understand sound.
+          </p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </a>
+            <a href="https://github.com/pagrumiaux" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ" aria-label="Google Scholar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+              </svg>
+            </a>
+            <a href="mailto:pierreamaury.grumiaux@gmail.com" aria-label="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Navigation</h4>
+          <ul class="footer__links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./research.html">Research</a></li>
+            <li><a href="./music.html">Music</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer__title">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/">LinkedIn</a></li>
+            <li><a href="https://github.com/pagrumiaux">GitHub</a></li>
+            <li><a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ">Google Scholar</a></li>
+            <li><a href="mailto:pierreamaury.grumiaux@gmail.com">Email</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>© 2025 Pierre-Amaury Grumiaux. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const navToggle = document.getElementById('nav-toggle');
+    const navLinks = document.getElementById('nav-links');
+    
+    navToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('nav__links--open');
+    });
+    
+    // Navbar scroll behavior
+    let lastScroll = 0;
+    const navbar = document.getElementById('navbar');
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 100) {
+        navbar.classList.add('nav--scrolled');
+      } else {
+        navbar.classList.remove('nav--scrolled');
+      }
+      
+      if (currentScroll > lastScroll && currentScroll > 300) {
+        navbar.classList.add('nav--hidden');
+      } else {
+        navbar.classList.remove('nav--hidden');
+      }
+      
+      lastScroll = currentScroll;
+    });
+  </script>
+</body>
+</html>
