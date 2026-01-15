@@ -3,296 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pierre-Amaury Grumiaux - Pianist and composer. Original neo-classical piano compositions available on Spotify, Deezer, and YouTube.">
-  <meta name="author" content="Pierre-Amaury Grumiaux">
-  
+  <meta name="description" content="Pierre-Amaury Grumiaux - Music">
   <title>Music — Pierre-Amaury Grumiaux</title>
   
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Source+Sans+3:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   
-  <!-- Styles -->
   <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="nav" id="navbar">
-    <div class="container">
-      <div class="nav__inner">
-        <a href="./index.html" class="nav__logo">P.A. Grumiaux</a>
-        
-        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-          </svg>
-        </button>
-        
-        <ul class="nav__links" id="nav-links">
-          <li><a href="./index.html" class="nav__link">Home</a></li>
-          <li><a href="./research.html" class="nav__link">Research</a></li>
-          <li><a href="./music.html" class="nav__link nav__link--active">Music</a></li>
-          <li><a href="./about.html" class="nav__link">About</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Page Header -->
-  <header class="page-header">
-    <div class="container">
-      <h1 class="page-header__title">Music</h1>
-      <p class="page-header__description">
-        Pianist for over 25 years. I compose original pieces, play by ear, 
-        and explore everything from classical to ambient soundscapes.
-      </p>
-    </div>
-  </header>
-
-  <!-- Main Piano Section -->
-  <section class="section">
-    <div class="container">
-      <div class="music-featured">
-        <img src="./static/img/piano.jpg" alt="Pierre-Amaury at the piano" class="music-featured__image">
-        <div class="music-featured__content">
-          <p class="section__subtitle">Original Compositions</p>
-          <h2>Piano Works</h2>
-          <p>
-            I've been playing piano since the age of 6. Over the years, I've explored many styles — 
-            classical repertoire, blues, boogie-woogie, and contemporary minimal music. 
-            I developed the ability to play by ear and arrange songs on the fly, which eventually 
-            led me to compose my own pieces.
-          </p>
-          <p>
-            My original compositions lean towards a <strong>neo-classical</strong> aesthetic — 
-            contemplative piano melodies that draw from both my classical training and my love for 
-            ambient electronic music. These pieces reflect the same attention to detail and structure 
-            that I bring to my engineering work.
-          </p>
-          <p>
-            Currently, 3 original piano pieces are available on streaming platforms, with more to come.
-          </p>
-          
-          <div class="music-featured__platforms">
-            <a href="https://open.spotify.com/artist/YOUR_SPOTIFY_ID" class="platform-link" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/></svg>
-              Spotify
+  <div class="container">
+    <div class="content-only">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <!-- Identity Card -->
+        <div class="identity-card">
+          <a href="./index.html">
+            <img src="./static/img/profile.jpg" alt="Pierre-Amaury Grumiaux" class="identity-card__photo">
+          </a>
+          <h1 class="identity-card__name">Pierre-Amaury Grumiaux</h1>
+          <p class="identity-card__title">Audio ML Engineer</p>
+          <div class="identity-card__links">
+            <a href="mailto:pierreamaury.grumiaux@gmail.com" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+              </svg>
             </a>
-            <a href="https://www.deezer.com/artist/YOUR_DEEZER_ID" class="platform-link" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.81 4.16v3.03H24V4.16h-5.19zM6.27 8.38v3.027h5.189V8.38h-5.19zm12.54 0v3.027H24V8.38h-5.19zM6.27 12.566v3.027h5.189v-3.027h-5.19zm6.27 0v3.027h5.19v-3.027h-5.19zm6.27 0v3.027H24v-3.027h-5.19zM0 16.752v3.027h5.19v-3.027H0zm6.27 0v3.027h5.189v-3.027h-5.19zm6.27 0v3.027h5.19v-3.027h-5.19zm6.27 0v3.027H24v-3.027h-5.19z"/></svg>
-              Deezer
+            <a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ" title="Google Scholar">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 24a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm0-24L0 9.5l4.5 3.5h15l4.5-3.5z"/>
+              </svg>
             </a>
-            <a href="https://www.youtube.com/@YOUR_YOUTUBE" class="platform-link" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-              YouTube
+            <a href="https://github.com/pagrumiaux" title="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
             </a>
-            <a href="https://music.apple.com/artist/YOUR_APPLE_ID" class="platform-link" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"/></svg>
-              Apple Music
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Embedded Player -->
-  <section class="section section--alt">
-    <div class="container container--narrow">
-      <div class="section__header">
-        <p class="section__subtitle">Listen</p>
-        <h2 class="section__title">Featured Tracks</h2>
-      </div>
-      
-      <!-- Spotify Embed - replace with your actual embed code -->
-      <div class="embed-container">
-        <iframe 
-          style="border-radius:12px" 
-          src="https://open.spotify.com/embed/artist/YOUR_SPOTIFY_ARTIST_ID?utm_source=generator&theme=0" 
-          width="100%" 
-          height="352" 
-          frameBorder="0" 
-          allowfullscreen="" 
-          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-          loading="lazy">
-        </iframe>
-      </div>
-      
-      <p class="text-center text-muted" style="margin-top: var(--space-md);">
-        <em>More compositions coming soon.</em>
-      </p>
-    </div>
-  </section>
-
-  <!-- Musical Background -->
-  <section class="section">
-    <div class="container container--narrow">
-      <div class="section__header" style="text-align: left;">
-        <p class="section__subtitle">Background</p>
-        <h2 class="section__title">My Musical Journey</h2>
-      </div>
-      
-      <p>
-        Music has shaped who I am long before I ever wrote a line of code. Starting piano lessons at age 6, 
-        I quickly developed a deep connection with the instrument. Beyond the classical training, 
-        I was drawn to understanding <em>how</em> music works — which naturally led me to playing by ear, 
-        improvising, and eventually arranging and composing.
-      </p>
-      <p>
-        In my teenage years, I discovered electronic music production, which opened a new world of 
-        sonic possibilities. I started experimenting with DAWs (Ableton Live), synthesizers, and 
-        sound design. This technical curiosity about sound eventually merged with my academic path, 
-        leading me to specialize in audio signal processing and machine learning for music.
-      </p>
-      <p>
-        Today, my musical practice and my engineering work inform each other. Understanding music 
-        from the inside — as a performer and composer — gives me intuition that pure data scientists 
-        often lack when working on audio AI. And conversely, my technical knowledge helps me approach 
-        composition with a unique perspective on timbre, spectrum, and acoustic space.
-      </p>
-    </div>
-  </section>
-
-  <!-- Legacy Projects -->
-  <section class="section section--alt">
-    <div class="container container--narrow">
-      <div class="legacy-projects">
-        <h3 class="legacy-projects__title">Other Musical Projects (Archive)</h3>
-        <p class="text-muted" style="margin-bottom: var(--space-lg);">
-          Over the years, I've explored various electronic music genres under different project names. 
-          While my current focus is on piano compositions, these projects remain available as a 
-          testament to my musical journey.
-        </p>
-        
-        <div class="legacy-grid">
-          <div class="legacy-card">
-            <h4 class="legacy-card__name">Educing Soundscapes</h4>
-            <p class="legacy-card__genre">Ambient / Soundtrack</p>
-            <div style="margin-top: var(--space-sm);">
-              <a href="https://soundcloud.com/educingsoundscapes" class="card__link" style="font-size: 0.8125rem;">
-                SoundCloud →
-              </a>
-            </div>
-          </div>
-          
-          <div class="legacy-card">
-            <h4 class="legacy-card__name">Miaug</h4>
-            <p class="legacy-card__genre">Electronic / Experimental</p>
-            <div style="margin-top: var(--space-sm);">
-              <a href="https://soundcloud.com/miaug" class="card__link" style="font-size: 0.8125rem;">
-                SoundCloud →
-              </a>
-            </div>
-          </div>
-          
-          <div class="legacy-card">
-            <h4 class="legacy-card__name">PAG Beats</h4>
-            <p class="legacy-card__genre">Hip-Hop Instrumentals</p>
-            <div style="margin-top: var(--space-sm);">
-              <a href="https://soundcloud.com/pag-beats" class="card__link" style="font-size: 0.8125rem;">
-                SoundCloud →
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <div>
-          <h3 class="footer__brand">P.A. Grumiaux</h3>
-          <p class="footer__description">
-            Deep Learning Engineer specializing in audio AI. 
-            Building intelligent systems that understand sound.
-          </p>
-          <div class="footer__social">
-            <a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/" aria-label="LinkedIn">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+            <a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/" title="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
               </svg>
             </a>
-            <a href="https://github.com/pagrumiaux" aria-label="GitHub">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </div>
+        </div>
+
+        <!-- Audio Player -->
+        <div class="audio-player">
+          <p class="audio-player__caption">A piano piece...</p>
+          <audio controls>
+            <source src="./static/audio/devil_town.wav" type="audio/wav">
+            Your browser does not support the audio element.
+          </audio>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="sidebar-section">
+          <h2>Interests</h2>
+          <ul class="interests-list">
+            <li>Audio deep learning</li>
+            <li>Sound event detection</li>
+            <li>Spatial audio</li>
+            <li>Music information retrieval</li>
+            <li>Neural audio synthesis</li>
+          </ul>
+        </div>
+      </aside>
+
+      <div>
+        <!-- Top Navigation -->
+        <nav class="top-nav">
+          <ul class="top-nav__list">
+            <li><a href="./research.html" class="top-nav__link">Research</a></li>
+            <li><a href="./experience.html" class="top-nav__link">Experience</a></li>
+            <li><a href="./music.html" class="top-nav__link top-nav__link--active">Music</a></li>
+          </ul>
+        </nav>
+
+        <main class="main-content">
+      <section class="section">
+        <p>
+          Piano is very important in my life. I have been playing it almost daily, since the age of 6. Over the years I have explored classical repertoire, 
+          blues, boogie-woogie, and minimal music. I have learned how to play by ear while exploring arrangements and compositions.
+        </p>
+      </section>
+
+      <h2>Piano</h2>
+      <section class="section">
+        <p>
+          I compose original piano pieces and arrangements influenced by artists like Doug Hammer, Ludovico Einaudi, Guillaume Poncelet, Olexandr Ignatov, Pieter Savenberg, as well as cinematic scores. My compositions blend minimalist patterns with melodic storytelling, exploring melancholic and contemplative atmospheres. I have had the chance to perform some of these pieces at friends' weddings and continue to share them on streaming platforms.
+        </p>
+        <div class="streaming-links">
+          <a href="https://open.spotify.com/intl-fr/artist/1IDXBXePUi6UTsWcplqOhv?si=jmExdd5MSFiePPWIzDLVQQ" title="Spotify">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+            </svg>
+          </a>
+          <a href="https://link.deezer.com/s/32aPH8gPWu22qkZh1yBLb" title="Deezer">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M18.81 16.145h-3.24v1.618h3.24v-1.618zm0-2.617h-3.24v1.617h3.24v-1.617zm0-2.618h-3.24v1.618h3.24V10.91zm-4.32 5.235h-3.24v1.618h3.24v-1.618zm0-2.617h-3.24v1.617h3.24v-1.617zm0-2.618h-3.24v1.618h3.24V10.91zm0-2.618h-3.24v1.618h3.24V8.292zm-4.32 7.853H6.93v1.618h3.24v-1.618zm0-2.617H6.93v1.617h3.24v-1.617zm0-2.618H6.93v1.618h3.24V10.91zm0-2.618H6.93v1.618h3.24V8.292zm0-2.617H6.93v1.617h3.24V5.675z"/>
+            </svg>
+          </a>
+          <a href="https://music.youtube.com/channel/UCDpRySVmygA9xCyvPKw0J7A?si=1FXfjAXxSAP2jG1M" title="YouTube Music">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-12.24c-2.832 0-5.136 2.304-5.136 5.136S9.168 17.136 12 17.136s5.136-2.304 5.136-5.136S14.832 6.864 12 6.864zM9.6 15.6V8.4L15.6 12 9.6 15.6z"/>
+            </svg>
+          </a>
+          <a href="https://tidal.com/artist/45728821/u" title="Tidal">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 0l-4.2 4.2L12 8.4l4.2-4.2L12 0zm-4.2 8.4L3.6 12.6l4.2 4.2 4.2-4.2-4.2-4.2zm8.4 0l-4.2 4.2 4.2 4.2 4.2-4.2-4.2-4.2zm-4.2 8.4l-4.2 4.2L12 24l4.2-4.2-4.2-4.2z"/>
+            </svg>
+          </a>
+          <a href="https://www.qobuz.com/ca-en/interpreter/pierre-amaury-grumiaux/18164079" title="Qobuz">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c1.894 0 3.682-.439 5.273-1.219l-2.927-2.927C13.609 20.551 12.83 20.8 12 20.8c-4.862 0-8.8-3.938-8.8-8.8S7.138 3.2 12 3.2s8.8 3.938 8.8 8.8c0 .83-.115 1.634-.331 2.398l2.927 2.927C23.561 15.682 24 13.894 24 12c0-6.627-5.373-12-12-12zm6.364 14.95l-4.314-4.314c.487-.796.77-1.73.77-2.736 0-2.873-2.327-5.2-5.2-5.2S4.4 5.027 4.4 7.9s2.327 5.2 5.2 5.2c1.006 0 1.94-.283 2.736-.77l4.314 4.314 1.714-1.694zM9.6 10.6c-1.49 0-2.7-1.21-2.7-2.7s1.21-2.7 2.7-2.7 2.7 1.21 2.7 2.7-1.21 2.7-2.7 2.7z"/>
+            </svg>
+          </a>
+          <a href="https://pagrumiaux.bandcamp.com/" title="Bandcamp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M0 9.6l6.4 4.8h11.2L24 9.6H0z"/>
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <h2>Other Projects</h2>
+      <section class="section">
+        <p>
+          Over the years I have explored electronic music production under various project names.
+        </p>
+
+        <div class="music-project">
+          <div class="music-project__name">Placid Koala</div>
+          <div class="music-project__desc">Lo-fi hip-hop and chill instrumentals.</div>
+          <div class="music-project__links">
+            <a href="https://open.spotify.com/intl-fr/artist/1l09bkoaeXWG88qG34HYSw?si=WHvlTIjbRJq2mmkf6mKICA" title="Spotify">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
               </svg>
             </a>
-            <a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ" aria-label="Google Scholar">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+            <a href="https://link.deezer.com/s/32aPSvrVQZtvJ9uaqN2C0" title="Deezer">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M18.81 16.145h-3.24v1.618h3.24v-1.618zm0-2.617h-3.24v1.617h3.24v-1.617zm0-2.618h-3.24v1.618h3.24V10.91zm-4.32 5.235h-3.24v1.618h3.24v-1.618zm0-2.617h-3.24v1.617h3.24v-1.617zm0-2.618h-3.24v1.618h3.24V10.91zm0-2.618h-3.24v1.618h3.24V8.292zm-4.32 7.853H6.93v1.618h3.24v-1.618zm0-2.617H6.93v1.617h3.24v-1.617zm0-2.618H6.93v1.618h3.24V10.91zm0-2.618H6.93v1.618h3.24V8.292zm0-2.617H6.93v1.617h3.24V5.675z"/>
               </svg>
             </a>
-            <a href="mailto:pierreamaury.grumiaux@gmail.com" aria-label="Email">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                <polyline points="22,6 12,13 2,6"/>
+            <a href="https://music.youtube.com/channel/UCGXlzIHcOKRb2JJ7F1FRGwg?si=O5CAu8k4JV6MFVjY" title="YouTube Music">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-12.24c-2.832 0-5.136 2.304-5.136 5.136S9.168 17.136 12 17.136s5.136-2.304 5.136-5.136S14.832 6.864 12 6.864zM9.6 15.6V8.4L15.6 12 9.6 15.6z"/>
+              </svg>
+            </a>
+            <a href="https://music.apple.com/fr/artist/placid-koala/1678001555" title="Apple Music">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M23.997 6.124c0-.738-.065-1.47-.24-2.19-.317-1.31-1.062-2.31-2.18-3.043a5.91 5.91 0 0 0-1.595-.634c-.66-.146-1.34-.181-2.015-.225C16.136-.007 15.346 0 14.556 0H9.444c-.794 0-1.584-.007-2.414.032-.675.044-1.355.079-2.015.225-.57.126-1.122.328-1.595.634C2.3 1.625 1.555 2.625 1.238 3.934c-.175.72-.24 1.452-.24 2.19C.997 7.885 1 9.645 1 11.405v1.19c0 1.76-.003 3.52.997 5.28 0 .738.065 1.47.24 2.19.317 1.31 1.062 2.31 2.18 3.043.473.306 1.025.508 1.595.634.66.146 1.34.181 2.015.225.83.039 1.62.032 2.414.032h5.112c.79 0 1.58.007 2.41-.032.675-.044 1.355-.079 2.015-.225.57-.126 1.122-.328 1.595-.634 1.118-.733 1.863-1.733 2.18-3.043.175-.72.24-1.452.24-2.19.001-1.76.003-3.52.003-5.28v-1.19c0-1.76.002-3.52-.003-5.28zM9.956 18.186c-1.102 0-2.16-.443-2.943-1.228-.783-.785-1.224-1.847-1.224-2.953 0-2.297 1.862-4.16 4.158-4.16.335 0 .664.042.976.124v-.673c0-2.516 1.82-4.623 4.309-4.95.066-.009.134-.013.201-.013.067 0 .135.004.201.013 2.49.327 4.309 2.434 4.309 4.95v7.295c0 .335-.27.607-.603.607-.334 0-.604-.272-.604-.607V9.296c0-1.99-1.441-3.661-3.413-3.95-.053-.007-.106-.011-.16-.011-.053 0-.106.004-.159.011-1.972.289-3.413 1.96-3.413 3.95v1.28c.311-.082.638-.124.973-.124 2.297 0 4.158 1.863 4.158 4.16 0 1.106-.441 2.168-1.224 2.953-.783.785-1.841 1.228-2.943 1.228zm0-6.727c-1.629 0-2.951 1.326-2.951 2.955s1.322 2.955 2.951 2.955c.788 0 1.528-.308 2.084-.865.556-.558.864-1.3.864-2.09 0-1.629-1.322-2.955-2.951-2.955z"/>
+              </svg>
+            </a>
+            <a href="https://tidal.com/artist/38153672/u" title="Tidal">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0l-4.2 4.2L12 8.4l4.2-4.2L12 0zm-4.2 8.4L3.6 12.6l4.2 4.2 4.2-4.2-4.2-4.2zm8.4 0l-4.2 4.2 4.2 4.2 4.2-4.2-4.2-4.2zm-4.2 8.4l-4.2 4.2L12 24l4.2-4.2-4.2-4.2z"/>
+              </svg>
+            </a>
+            <a href="https://open.qobuz.com/artist/18164078" title="Qobuz">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12c1.894 0 3.682-.439 5.273-1.219l-2.927-2.927C13.609 20.551 12.83 20.8 12 20.8c-4.862 0-8.8-3.938-8.8-8.8S7.138 3.2 12 3.2s8.8 3.938 8.8 8.8c0 .83-.115 1.634-.331 2.398l2.927 2.927C23.561 15.682 24 13.894 24 12c0-6.627-5.373-12-12-12zm6.364 14.95l-4.314-4.314c.487-.796.77-1.73.77-2.736 0-2.873-2.327-5.2-5.2-5.2S4.4 5.027 4.4 7.9s2.327 5.2 5.2 5.2c1.006 0 1.94-.283 2.736-.77l4.314 4.314 1.714-1.694zM9.6 10.6c-1.49 0-2.7-1.21-2.7-2.7s1.21-2.7 2.7-2.7 2.7 1.21 2.7 2.7-1.21 2.7-2.7 2.7z"/>
+              </svg>
+            </a>
+            <a href="https://placidkoala.bandcamp.com/" title="Bandcamp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 9.6l6.4 4.8h11.2L24 9.6H0z"/>
               </svg>
             </a>
           </div>
         </div>
-        
-        <div>
-          <h4 class="footer__title">Navigation</h4>
-          <ul class="footer__links">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./research.html">Research</a></li>
-            <li><a href="./music.html">Music</a></li>
-            <li><a href="./about.html">About</a></li>
-          </ul>
+
+        <div class="music-project">
+          <div class="music-project__name">Educing Soundscapes</div>
+          <div class="music-project__desc">Ambient and soundtrack music.</div>
+          <div class="music-project__links">
+            <a href="https://educingsoundscapes.bandcamp.com" title="Bandcamp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/>
+              </svg>
+            </a>
+            <a href="https://soundcloud.com/educingsoundscapes" title="SoundCloud">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.051 0-.09.04-.099.098l-.135 1.326.135 1.303c.009.054.048.094.099.094.051 0 .09-.04.099-.094l.153-1.303-.153-1.326c-.009-.058-.048-.098-.099-.098m1.8-1.268c-.05 0-.094.04-.103.102l-.182 2.396.182 2.366c.009.062.053.102.103.102.051 0 .094-.04.103-.102l.204-2.366-.204-2.396c-.009-.062-.052-.102-.103-.102m.899-.553c-.053 0-.098.046-.107.107l-.174 2.949.174 2.908c.009.06.054.107.107.107.053 0 .097-.046.106-.107l.195-2.908-.195-2.949c-.009-.061-.053-.107-.106-.107m.9.163c-.053 0-.1.048-.109.112l-.166 2.786.166 2.749c.009.065.056.112.109.112.053 0 .098-.047.109-.112l.189-2.749-.189-2.786c-.011-.064-.056-.112-.109-.112m.899-.062c-.055 0-.102.048-.113.112l-.157 2.848.157 2.799c.011.065.058.113.113.113.055 0 .102-.048.113-.113l.176-2.799-.176-2.848c-.011-.064-.058-.112-.113-.112m.899.06c-.055 0-.102.048-.113.113l-.148 2.788.148 2.738c.011.064.058.113.113.113.059 0 .106-.049.117-.113l.168-2.738-.168-2.788c-.011-.065-.058-.113-.117-.113m.899.074c-.059 0-.106.053-.117.117l-.139 2.714.139 2.673c.011.064.058.117.117.117.059 0 .108-.053.119-.117l.16-2.673-.16-2.714c-.011-.064-.06-.117-.119-.117m.899.124c-.059 0-.108.053-.119.119l-.13 2.59.13 2.55c.011.066.06.119.119.119.061 0 .11-.053.121-.119l.147-2.55-.147-2.59c-.011-.066-.06-.119-.121-.119m.899.224c-.061 0-.11.053-.121.119l-.121 2.366.121 2.328c.011.066.06.119.121.119.061 0 .11-.053.123-.119l.138-2.328-.138-2.366c-.013-.066-.062-.119-.123-.119m.899.387c-.061 0-.11.054-.123.121l-.111 1.979.111 1.942c.013.066.062.121.123.121.063 0 .113-.055.125-.121l.127-1.942-.127-1.979c-.012-.067-.062-.121-.125-.121m.899.541c-.063 0-.113.056-.125.125l-.102 1.438.102 1.414c.012.069.062.125.125.125.063 0 .113-.056.127-.125l.117-1.414-.117-1.438c-.014-.069-.064-.125-.127-.125m.899.717c-.065 0-.115.058-.129.129l-.092.721.092.698c.014.071.064.129.129.129.065 0 .117-.058.129-.129l.106-.698-.106-.721c-.012-.071-.064-.129-.129-.129"/>
+              </svg>
+            </a>
+          </div>
         </div>
-        
-        <div>
-          <h4 class="footer__title">Connect</h4>
-          <ul class="footer__links">
-            <li><a href="https://www.linkedin.com/in/pierre-amaury-grumiaux-352b719a/">LinkedIn</a></li>
-            <li><a href="https://github.com/pagrumiaux">GitHub</a></li>
-            <li><a href="https://scholar.google.com/citations?user=gUBZ64sAAAAJ">Google Scholar</a></li>
-            <li><a href="mailto:pierreamaury.grumiaux@gmail.com">Email</a></li>
-          </ul>
+
+        <div class="music-project">
+          <div class="music-project__name">Miaug</div>
+          <div class="music-project__desc">Electronic and experimental.</div>
+          <div class="music-project__links">
+            <a href="https://miaug.bandcamp.com" title="Bandcamp">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M0 18.75l7.437-13.5H24l-7.438 13.5H0z"/>
+              </svg>
+            </a>
+            <a href="https://soundcloud.com/miaug" title="SoundCloud">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.051 0-.09.04-.099.098l-.135 1.326.135 1.303c.009.054.048.094.099.094.051 0 .09-.04.099-.094l.153-1.303-.153-1.326c-.009-.058-.048-.098-.099-.098m1.8-1.268c-.05 0-.094.04-.103.102l-.182 2.396.182 2.366c.009.062.053.102.103.102.051 0 .094-.04.103-.102l.204-2.366-.204-2.396c-.009-.062-.052-.102-.103-.102m.899-.553c-.053 0-.098.046-.107.107l-.174 2.949.174 2.908c.009.06.054.107.107.107.053 0 .097-.046.106-.107l.195-2.908-.195-2.949c-.009-.061-.053-.107-.106-.107m.9.163c-.053 0-.1.048-.109.112l-.166 2.786.166 2.749c.009.065.056.112.109.112.053 0 .098-.047.109-.112l.189-2.749-.189-2.786c-.011-.064-.056-.112-.109-.112m.899-.062c-.055 0-.102.048-.113.112l-.157 2.848.157 2.799c.011.065.058.113.113.113.055 0 .102-.048.113-.113l.176-2.799-.176-2.848c-.011-.064-.058-.112-.113-.112m.899.06c-.055 0-.102.048-.113.113l-.148 2.788.148 2.738c.011.064.058.113.113.113.059 0 .106-.049.117-.113l.168-2.738-.168-2.788c-.011-.065-.058-.113-.117-.113m.899.074c-.059 0-.106.053-.117.117l-.139 2.714.139 2.673c.011.064.058.117.117.117.059 0 .108-.053.119-.117l.16-2.673-.16-2.714c-.011-.064-.06-.117-.119-.117m.899.124c-.059 0-.108.053-.119.119l-.13 2.59.13 2.55c.011.066.06.119.119.119.061 0 .11-.053.121-.119l.147-2.55-.147-2.59c-.011-.066-.06-.119-.121-.119m.899.224c-.061 0-.11.053-.121.119l-.121 2.366.121 2.328c.011.066.06.119.121.119.061 0 .11-.053.123-.119l.138-2.328-.138-2.366c-.013-.066-.062-.119-.123-.119m.899.387c-.061 0-.11.054-.123.121l-.111 1.979.111 1.942c.013.066.062.121.123.121.063 0 .113-.055.125-.121l.127-1.942-.127-1.979c-.012-.067-.062-.121-.125-.121m.899.541c-.063 0-.113.056-.125.125l-.102 1.438.102 1.414c.012.069.062.125.125.125.063 0 .113-.056.127-.125l.117-1.414-.117-1.438c-.014-.069-.064-.125-.127-.125m.899.717c-.065 0-.115.058-.129.129l-.092.721.092.698c.014.071.064.129.129.129.065 0 .117-.058.129-.129l.106-.698-.106-.721c-.012-.071-.064-.129-.129-.129"/>
+              </svg>
+            </a>
+          </div>
         </div>
-      </div>
-      
-      <div class="footer__bottom">
-        <p>© 2025 Pierre-Amaury Grumiaux. All rights reserved.</p>
+
+        <div class="music-project">
+          <div class="music-project__name">PAG Beats</div>
+          <div class="music-project__desc">Hip-hop instrumentals.</div>
+          <div class="music-project__links">
+            <a href="https://soundcloud.com/pag-beats" title="SoundCloud">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.051 0-.09.04-.099.098l-.135 1.326.135 1.303c.009.054.048.094.099.094.051 0 .09-.04.099-.094l.153-1.303-.153-1.326c-.009-.058-.048-.098-.099-.098m1.8-1.268c-.05 0-.094.04-.103.102l-.182 2.396.182 2.366c.009.062.053.102.103.102.051 0 .094-.04.103-.102l.204-2.366-.204-2.396c-.009-.062-.052-.102-.103-.102m.899-.553c-.053 0-.098.046-.107.107l-.174 2.949.174 2.908c.009.06.054.107.107.107.053 0 .097-.046.106-.107l.195-2.908-.195-2.949c-.009-.061-.053-.107-.106-.107m.9.163c-.053 0-.1.048-.109.112l-.166 2.786.166 2.749c.009.065.056.112.109.112.053 0 .098-.047.109-.112l.189-2.749-.189-2.786c-.011-.064-.056-.112-.109-.112m.899-.062c-.055 0-.102.048-.113.112l-.157 2.848.157 2.799c.011.065.058.113.113.113.055 0 .102-.048.113-.113l.176-2.799-.176-2.848c-.011-.064-.058-.112-.113-.112m.899.06c-.055 0-.102.048-.113.113l-.148 2.788.148 2.738c.011.064.058.113.113.113.059 0 .106-.049.117-.113l.168-2.738-.168-2.788c-.011-.065-.058-.113-.117-.113m.899.074c-.059 0-.106.053-.117.117l-.139 2.714.139 2.673c.011.064.058.117.117.117.059 0 .108-.053.119-.117l.16-2.673-.16-2.714c-.011-.064-.06-.117-.119-.117m.899.124c-.059 0-.108.053-.119.119l-.13 2.59.13 2.55c.011.066.06.119.119.119.061 0 .11-.053.121-.119l.147-2.55-.147-2.59c-.011-.066-.06-.119-.121-.119m.899.224c-.061 0-.11.053-.121.119l-.121 2.366.121 2.328c.011.066.06.119.121.119.061 0 .11-.053.123-.119l.138-2.328-.138-2.366c-.013-.066-.062-.119-.123-.119m.899.387c-.061 0-.11.054-.123.121l-.111 1.979.111 1.942c.013.066.062.121.123.121.063 0 .113-.055.125-.121l.127-1.942-.127-1.979c-.012-.067-.062-.121-.125-.121m.899.541c-.063 0-.113.056-.125.125l-.102 1.438.102 1.414c.012.069.062.125.125.125.063 0 .113-.056.127-.125l.117-1.414-.117-1.438c-.014-.069-.064-.125-.127-.125m.899.717c-.065 0-.115.058-.129.129l-.092.721.092.698c.014.071.064.129.129.129.065 0 .117-.058.129-.129l.106-.698-.106-.721c-.012-.071-.064-.129-.129-.129"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+        </main>
       </div>
     </div>
-  </footer>
 
-  <!-- Scripts -->
-  <script>
-    // Mobile menu toggle
-    const navToggle = document.getElementById('nav-toggle');
-    const navLinks = document.getElementById('nav-links');
-    
-    navToggle.addEventListener('click', () => {
-      navLinks.classList.toggle('nav__links--open');
-    });
-    
-    // Navbar scroll behavior
-    let lastScroll = 0;
-    const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', () => {
-      const currentScroll = window.pageYOffset;
-      
-      if (currentScroll > 100) {
-        navbar.classList.add('nav--scrolled');
-      } else {
-        navbar.classList.remove('nav--scrolled');
-      }
-      
-      if (currentScroll > lastScroll && currentScroll > 300) {
-        navbar.classList.add('nav--hidden');
-      } else {
-        navbar.classList.remove('nav--hidden');
-      }
-      
-      lastScroll = currentScroll;
-    });
-  </script>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2020-2026 Pierre-Amaury Grumiaux</p>
+    </footer>
+  </div>
 </body>
 </html>

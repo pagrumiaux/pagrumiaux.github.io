@@ -1,0 +1,624 @@
+/* ============================================
+   Pierre-Amaury Grumiaux - Portfolio
+   Minimal, sober academic design
+   ============================================ */
+
+:root {
+  --color-bg: #1a1a1a;
+  --color-white: #2a2a2a;
+  --color-border: #3a3a3a;
+  --color-text: #c5c5c5;
+  --color-text-secondary: #888888;
+  --color-accent: #b8956a;
+  --color-accent-hover: #d4af7a;
+
+  --font-serif: 'Space Mono', 'Courier New', monospace;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+
+  --max-width: 1200px;
+}
+
+/* Reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  line-height: 1.3;
+  margin: 0 0 var(--space-md) 0;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: var(--space-xl);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-accent);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: var(--space-xs);
+}
+
+p {
+  margin: 0 0 var(--space-md) 0;
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0 0 var(--space-md) 0;
+  padding-left: var(--space-lg);
+}
+
+li {
+  margin-bottom: var(--space-xs);
+}
+
+/* Layout */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-xl);
+}
+
+.page-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: var(--space-2xl);
+  row-gap: 0;
+  align-items: start;
+  grid-template-rows: auto 1fr;
+}
+
+.sidebar {
+  position: sticky;
+  top: var(--space-xl);
+  grid-row: 1 / 3;
+}
+
+.main-content {
+  min-width: 0;
+}
+
+.content-only {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: var(--space-2xl);
+  align-items: start;
+}
+
+/* Sidebar Identity Card */
+.identity-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.identity-card__photo {
+  width: 220px;
+  height: 160px;
+  border-radius: 4px;
+  object-fit: cover;
+  margin: 0 auto var(--space-md) auto;
+  display: block;
+  filter: brightness(0.9) contrast(0.95);
+  transition: filter 0.2s ease;
+}
+
+.identity-card__photo:hover {
+  filter: brightness(0.8) contrast(1);
+}
+
+.identity-card__name {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-xs);
+}
+
+.identity-card__title {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-sans);
+}
+
+.identity-card__links {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-sm);
+}
+
+.identity-card__links a {
+  display: block;
+  color: var(--color-text-secondary);
+  transition: color 0.2s ease;
+}
+
+.identity-card__links a:hover {
+  color: var(--color-accent);
+}
+
+.identity-card__links svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Audio Player */
+.audio-player {
+  margin-bottom: var(--space-md);
+}
+
+.audio-player__caption {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  margin: 0 0 var(--space-xs) 0;
+  font-style: italic;
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 32px;
+}
+
+.audio-player audio::-webkit-media-controls-panel {
+  background-color: var(--color-bg);
+}
+
+/* Top Navigation */
+.top-nav {
+  grid-column: 2;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.top-nav__list {
+  display: flex;
+  gap: var(--space-xl);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: flex-start;
+}
+
+.top-nav__link {
+  color: var(--color-text-secondary);
+  font-size: 1.0rem;
+  text-decoration: none;
+}
+
+.top-nav__link:hover {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+.top-nav__link--active {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+/* Main content */
+main {
+  padding-bottom: var(--space-2xl);
+  grid-column: 2;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+/* Section */
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+/* Publication entry */
+.pub {
+  margin-bottom: var(--space-lg);
+}
+
+.pub__title {
+  font-weight: 500;
+  color: var(--color-text);
+  margin-bottom: var(--space-xs);
+}
+
+.pub__authors {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.pub__venue {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-xs);
+}
+
+.pub__links {
+  font-size: 0.85rem;
+}
+
+.pub__links a {
+  margin-right: var(--space-md);
+}
+
+/* Experience entry */
+.exp {
+  margin-bottom: var(--space-lg);
+}
+
+.exp__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.exp__role {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.exp__date {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.exp__org {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  margin-bottom: var(--space-sm);
+  font-weight: 400;
+  font-style: italic;
+  margin-top: var(--space-xs);
+}
+
+.exp__desc {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+/* Education entry */
+.edu {
+  margin-bottom: var(--space-lg);
+}
+
+.edu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.edu__degree {
+  font-weight: 600;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.edu__date {
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  font-weight: 400;
+}
+
+.edu__school {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: var(--space-xs);
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.skill {
+  font-size: 0.875rem;
+  color: var(--color-text-secondary);
+  background: var(--color-white);
+  padding: var(--space-xs) var(--space-sm);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+}
+
+/* Music */
+.music-project {
+  margin-bottom: var(--space-lg);
+}
+
+.music-project__name {
+  font-weight: 500;
+  margin-bottom: var(--space-xs);
+}
+
+.music-project__desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--space-sm);
+}
+
+.music-project__links {
+  display: flex;
+  gap: var(--space-md);
+  align-items: center;
+}
+
+.music-project__links a {
+  transition: opacity 0.2s ease;
+  opacity: 0.9;
+  display: flex;
+  align-items: center;
+}
+
+.music-project__links a:hover {
+  opacity: 1;
+}
+
+.music-project__links svg {
+  width: 22px;
+  height: 22px;
+}
+
+.streaming-links {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-sm);
+}
+
+.streaming-links a {
+  transition: opacity 0.2s ease;
+  opacity: 0.9;
+}
+
+.streaming-links a:hover {
+  opacity: 1;
+}
+
+.streaming-links svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* Brand colors for streaming platforms */
+.streaming-links a[title="Spotify"] svg {
+  fill: #1DB954;
+}
+
+.streaming-links a[title="Deezer"] svg {
+  fill: #FF0092;
+}
+
+.streaming-links a[title="YouTube Music"] svg {
+  fill: #FF0000;
+}
+
+.streaming-links a[title="Bandcamp"] svg {
+  fill: #629aa9;
+}
+
+.streaming-links a[title="Tidal"] svg {
+  fill: #00FFFF;
+}
+
+.streaming-links a[title="Qobuz"] svg {
+  fill: #0E7EE6;
+}
+
+.streaming-links a[title="Apple Music"] svg {
+  fill: #FA243C;
+}
+
+/* Brand colors for music project links */
+.music-project__links a[title="Spotify"] svg {
+  fill: #1DB954;
+}
+
+.music-project__links a[title="Deezer"] svg {
+  fill: #FF0092;
+}
+
+.music-project__links a[title="YouTube Music"] svg {
+  fill: #FF0000;
+}
+
+.music-project__links a[title="Apple Music"] svg {
+  fill: #FA243C;
+}
+
+.music-project__links a[title="Tidal"] svg {
+  fill: #00FFFF;
+}
+
+.music-project__links a[title="Qobuz"] svg {
+  fill: #0E7EE6;
+}
+
+.music-project__links a[title="Bandcamp"] svg {
+  fill: #629aa9;
+}
+
+.music-project__links a[title="SoundCloud"] svg {
+  fill: #FF5500;
+}
+
+/* Footer */
+.footer {
+  padding: var(--space-xl) 0;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+/* Sidebar section (for interests on index page) */
+.sidebar-section {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: var(--space-md);
+}
+
+.sidebar-section h2 {
+  font-size: 0.85rem;
+  margin-top: 0;
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 1px solid var(--color-border);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sidebar-section p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  color: var(--color-text-secondary);
+}
+
+.interests-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.interests-list li {
+  font-size: 0.8rem;
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 3px;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+/* Page navigation buttons */
+.page-nav {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-xl);
+}
+
+.page-nav__btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-sm);
+  padding: var(--space-md);
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.page-nav__btn:hover {
+  background: var(--color-border);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.page-nav__btn svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* CV Links */
+.cv-links {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-lg);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .page-layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
+  }
+
+  .sidebar {
+    position: static;
+  }
+
+  .top-nav__list {
+    gap: var(--space-lg);
+  }
+
+  .exp__header,
+  .edu__header {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .exp__date,
+  .edu__date {
+    order: -1;
+  }
+}
