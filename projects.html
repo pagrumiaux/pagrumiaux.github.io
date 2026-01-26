@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Professional experience and education of Pierre-Amaury Grumiaux. Audio ML Engineer at Sonaid, PhD from Université Grenoble Alpes, postdoc at LS2N Centrale Nantes.">
-  <meta name="keywords" content="Pierre-Amaury Grumiaux, audio ML engineer, PhD audio signal processing, Sonaid, Orange Labs, GIPSA-lab, IRCAM">
+  <meta name="description" content="Personal projects by Pierre-Amaury Grumiaux. Text-to-Foley audio generation and Timbre Morpher for audio transformation.">
+  <meta name="keywords" content="Pierre-Amaury Grumiaux, text-to-foley, foley sounds, audio generation, timbre morpher, audio ML, deep learning audio">
   <meta name="author" content="Pierre-Amaury Grumiaux">
-  <title>Experience — Pierre-Amaury Grumiaux</title>
+  <title>Projects — Pierre-Amaury Grumiaux</title>
 
   <!-- Open Graph / Social Media -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://pagrumiaux.github.io/experience.html">
-  <meta property="og:title" content="Experience — Pierre-Amaury Grumiaux">
-  <meta property="og:description" content="Audio ML Engineer at Sonaid, PhD from Université Grenoble Alpes. Professional experience in audio machine learning and signal processing.">
+  <meta property="og:url" content="https://pagrumiaux.github.io/projects.html">
+  <meta property="og:title" content="Projects — Pierre-Amaury Grumiaux">
+  <meta property="og:description" content="Personal audio ML projects: Text-to-Foley generation and Timbre Morpher.">
   <meta property="og:image" content="https://pagrumiaux.github.io/static/img/profile.jpg">
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://pagrumiaux.github.io/experience.html">
+  <link rel="canonical" href="https://pagrumiaux.github.io/projects.html">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -87,95 +87,63 @@
         <nav class="top-nav">
           <ul class="top-nav__list">
             <li><a href="./research.html" class="top-nav__link">Research</a></li>
-            <li><a href="./experience.html" class="top-nav__link top-nav__link--active">Experience</a></li>
-            <li><a href="./projects.html" class="top-nav__link">Projects</a></li>
+            <li><a href="./experience.html" class="top-nav__link">Experience</a></li>
+            <li><a href="./projects.html" class="top-nav__link top-nav__link--active">Projects</a></li>
             <li><a href="./music.html" class="top-nav__link">Music</a></li>
           </ul>
         </nav>
 
         <main class="main-content">
-          <h2>Experience</h2>
           <section class="section">
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">Audio Machine Learning Engineer</span>
-                <span class="exp__date">2024 — present</span>
-              </div>
-              <div class="exp__org">Sonaid</div>
-              <div class="exp__desc">Audio event recognition: DL pipeline development and embedded deployment.</div>
-            </div>
-
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">Postdoctoral Researcher</span>
-                <span class="exp__date">2022 — 2023</span>
-              </div>
-              <div class="exp__org">LS2N, Centrale Nantes</div>
-              <div class="exp__desc">Bandwidth extension of musical signals with differentiable deep learning models.</div>
-            </div>
-
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">PhD Researcher</span>
-                <span class="exp__date">2018 — 2021</span>
-              </div>
-              <div class="exp__org">Orange Labs & GIPSA-lab, Université Grenoble Alpes</div>
-              <div class="exp__desc">Deep learning for speaker counting and localization with spatial audio.</div>
-            </div>
-
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">Research Intern</span>
-                <span class="exp__date">2018</span>
-              </div>
-              <div class="exp__org">IRCAM, Paris</div>
-              <div class="exp__desc">Automatic drum transcription. Supervised by Geoffroy Peeters.</div>
-            </div>
-
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">Research Intern</span>
-                <span class="exp__date">2017</span>
-              </div>
-              <div class="exp__org">Audionamix, Paris</div>
-              <div class="exp__desc">Text-to-audio alignment for voice signals.</div>
-            </div>
-
-            <div class="exp">
-              <div class="exp__header">
-                <span class="exp__role">Research Intern</span>
-                <span class="exp__date">2016</span>
-              </div>
-              <div class="exp__org">CRI, Mines ParisTech</div>
-              <div class="exp__desc">Physical modeling in Faust. Supervised by Pierre Jouvelot and Romain Michon.</div>
-            </div>
+            <p>
+              Her eare some personal projects that I work on during my free time, in order to explore ideas merging machine learning, audio and music.
+            </p>
           </section>
 
-          <h2>Education</h2>
+          <h2 id="text-to-foley">Text-to-foley</h2>
           <section class="section">
-            <div class="edu">
-              <div class="edu__header">
-                <span class="edu__degree">PhD in audio deep learning</span>
-                <span class="edu__date">2018 — 2021</span>
-              </div>
-              <div class="edu__school">Université Grenoble Alpes</div>
+            <p>
+              Text-to-audio generation model specialized for foley sounds. Given a text description, the model generates realistic sound effects commonly used in film and media production.
+            </p>
+            <div class="project-links">
+              <a href="https://github.com/pagrumiaux/text-to-foley" class="project-link" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                View on GitHub
+              </a>
             </div>
 
-            <div class="edu">
-              <div class="edu__header">
-                <span class="edu__degree">Master ATIAM</span>
-                <span class="edu__date">2017 — 2018</span>
-              </div>
-              <div class="edu__school">IRCAM, Sorbonne Universités, Télécom Paris</div>
+            <h3>Audio Examples</h3>
+            <div class="audio-example">
+              <p class="audio-example__prompt">"Footsteps on wooden floor, slow walking pace, indoor"</p>
+              <audio controls>
+                <source src="./static/audio/foley/footsteps.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="audio-example">
+              <p class="audio-example__prompt">"Heavy rain on metal roof, steady downpour"</p>
+              <audio controls>
+                <source src="./static/audio/foley/rain.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="audio-example">
+              <p class="audio-example__prompt">"Large window glass violently shattering, exploding into pieces, dramatic crash"</p>
+              <audio controls>
+                <source src="./static/audio/foley/glass_break.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+            <div class="audio-example">
+              <p class="audio-example__prompt">"Deep thunder rumble, powerful storm rolling thunder, dramatic boom"</p>
+              <audio controls>
+                <source src="./static/audio/foley/thunder.wav" type="audio/wav">
+                Your browser does not support the audio element.
+              </audio>
             </div>
 
-            <div class="edu">
-              <div class="edu__header">
-                <span class="edu__degree">Engineering Degree</span>
-                <span class="edu__date">2013 — 2017</span>
-              </div>
-              <div class="edu__school">École Centrale de Lille</div>
-            </div>
           </section>
         </main>
       </div>
