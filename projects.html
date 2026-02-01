@@ -110,12 +110,13 @@
               The system takes two audio files as input (e.g., a piano note and a violin note) and encodes each into a compact latent representation using a variational autoencoder (VAE). These latent vectors capture the essential characteristics of each sound in a continuous, high-dimensional space. To generate the morph, the system computes a trajectory of intermediate points by linearly interpolating between the two latent representations. Each point along this trajectory is then decoded back into audio, producing a sequence of sounds that gradually transition from the source timbre to the target.
             </p>
             <h3>Implemented models</h3>
-            <p>
-              Currently supports RAVE (Realtime Audio Variational autoEncoder) from IRCAM, with several pretrained checkpoints available for different audio domains (classical instruments, speech, percussion).
-            </p>
+            <ul>
+              <li>RAVE (Realtime Audio Variational autoEncoder) from IRCAM, with several pretrained checkpoints available for different audio domains (classical instruments, speech, percussion)</li>
+              <li>EnCodec from Meta for high-fidelity audio compression and reconstruction</li>
+            </ul>
             <h3>Next steps</h3>
             <ul>
-              <li>Integrate additional neural audio codecs: Meta's EnCodec and Descript's DAC</li>
+              <li>Integrate additional neural audio codecs: Descript's DAC, AudioMAE</li>
               <li>Implement pitch preservation during morphing</li>
               <li>Add alternative interpolation methods (SLERP, Bezier curves)</li>
               <li>Package as a VST/AU plugin for digital audio workstations</li>
