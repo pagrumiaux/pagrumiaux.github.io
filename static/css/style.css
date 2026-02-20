@@ -194,11 +194,47 @@ li {
   margin-bottom: var(--space-md);
 }
 
+.audio-player__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-xs);
+}
+
 .audio-player__caption {
   font-size: 0.8rem;
   color: var(--color-text-secondary);
-  margin: 0 0 var(--space-xs) 0;
+  margin: 0;
   font-style: italic;
+}
+
+.audio-player__links {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.audio-player__links a {
+  display: block;
+  transition: opacity 0.2s ease;
+  opacity: 0.85;
+}
+
+.audio-player__links a:hover {
+  opacity: 1;
+}
+
+.audio-player__links svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.audio-player__links a[title="Spotify"] {
+  color: #1DB954;
+}
+
+.audio-player__links a[title="Deezer"] {
+  color: #FF0092;
 }
 
 .audio-player audio {
