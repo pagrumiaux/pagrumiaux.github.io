@@ -706,17 +706,37 @@ main {
 
 /* Responsive */
 @media (max-width: 900px) {
-  .page-layout {
-    grid-template-columns: 1fr;
-    gap: var(--space-xl);
+  .container {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .page-layout,
+  .content-only {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto;
+    gap: var(--space-lg);
   }
 
   .sidebar {
     position: static;
+    grid-row: auto;
+  }
+
+  .top-nav,
+  main {
+    grid-column: 1;
   }
 
   .top-nav__list {
-    gap: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-sm) var(--space-lg);
+  }
+
+  .identity-card__photo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    aspect-ratio: 11 / 8;
   }
 
   .exp__header,
@@ -728,5 +748,37 @@ main {
   .exp__date,
   .edu__date {
     order: -1;
+  }
+
+  .project-links,
+  .page-nav {
+    flex-wrap: wrap;
+  }
+
+  .page-nav {
+    flex-direction: column;
+  }
+
+  .streaming-links,
+  .music-project__links {
+    flex-wrap: wrap;
+  }
+
+  main {
+    overflow-wrap: anywhere;
+  }
+
+  img, svg, video, iframe {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
   }
 }
